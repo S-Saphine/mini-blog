@@ -1,0 +1,35 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="Django" />
+            <item index="1" class="java.lang.String" itemvalue="asgiref" />
+            <item index="2" class="java.lang.String" itemvalue="sqlparse" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="INFORMATION" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="M_03_DatabaseAndModels.mysite.shopapp.management.commands.create_order.*" />
+          <option value="shopapp.utils" />
+          <option value="add_two_numbers" />
+          <option value="app_users.api" />
+          <option value="app_users.serializers" />
+          <option value="app_goods.entities" />
+          <option value="app_goods.views.items_list" />
+          <option value="app_goods.models.ItemSerializer" />
+          <option value="app_goods.views.ItemList" />
+          <option value="app_goods.models.Author" />
+          <option value="app_goods.views.AuthorList" />
+          <option value="app_goods.views.ItemDetail" />
+          <option value="djlibrary.urls.drf_yasg" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
