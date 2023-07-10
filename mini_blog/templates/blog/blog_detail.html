@@ -22,33 +22,51 @@
 
 		<div id="main">
 			<div id="content" class="left">
-				
 				<div class="projects">
-					<h3>Записи</h3>
-					{% for post in post_list %}
+					<h3>{{ post.title }}</h3>
+                    <p align="center">
+                        <img src="{{ post.img.url }}" width="50%" alt="" />
+                    </p>
 					<div class="item">
-						<div class="image left">
-							<a href="#"><img src="{{ post.img.url }}" width="200px" alt="" /></a>
-						</div>
 						<div class="text left">
-							<h4><a href="{{ post.id }}">{{ post.title }}</a></h4>
 							<p>{{ post.description }}</p>
 							<p>Автор: {{ post.author }}</p>
 						</div>
 						<div class="cl">&nbsp;</div>
 					</div>
-					{% endfor %}
 				</div>
 			</div>
-			
+
+			<div class="form-comment">
+				<h3>Оставить комментарий</h3>
+				<div>
+					<form action="#" method="post">
+						<div>
+							<label>Ваш комментарий</label>
+							<textarea name="text_comments"></textarea>
+						</div>
+						<div>
+							<label>Ваше имя *</label>
+							<input type="text" name="name">
+						</div>
+						<div>
+							<label>Ваш Email *</label>
+							<input type="email" name="email">
+						</div>
+						<div>
+							<input type="submit">
+						</div>
+					</form>
+				</div>
+			</div>
+
 			<div class="cl">&nbsp;</div>
 		</div>
-		
 
 	</div>
 	
 	<div id="footer">
-		<p class="copy right">Copyright &copy;  2022 </p>
+		<p class="copy right">Copyright &copy;  2023</p>
 	</div>
 </div>
 </body>
